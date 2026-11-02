@@ -1,0 +1,15 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/tg"
+  to = "/.netlify/functions/telegram"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/telegram"
+  status = 200
+  force = true
